@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="col-lg-8 mx-auto">
+        <h1 class="display-4">{{ post.title }}</h1>
+        <p class="text-muted border-bottom pb-3">Archived on: {{ post.date }}</p>
+        
+        <div class="fs-5 lh-lg mt-4">
+            {{ post.body }}
+        </div>
+        
+        <div class="mt-5">
+            <a href="/" class="btn btn-secondary">&larr; Back to Archives</a>
+        </div>
+    </div>
+{% endblock %}
